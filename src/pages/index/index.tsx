@@ -1,15 +1,43 @@
-import { View, Text } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
-import './index.scss'
+import { FC, useState } from 'react';
+import {
+  View,
+  ScrollView,
+} from '@tarojs/components';
+import Taro from '@tarojs/taro';
+import styles from './index.module.scss';
+// import Banner from '../../components/Banner';
+// import Recommend from '../../components/Recommend';
+// import Footer from '../../components/Footer';
+import Header from '../components/Home/Header';
+import ImageSwiper from '../components/Home/Swiper/ index';
+import Category from '../components/Home/Category';
+import Recommend from '../components/Home/Recommend';
+import AudioBook from '../components/Home/AudioBook';
+import TabBar from '../components/Home/TabBar';
 
-export default function Index () {
-  useLoad(() => {
-    console.log('Page loaded.')
-  })
+
+const Index: FC = () => {
+  const [searchValue, setSearchValue] = useState<string>('');
 
   return (
-    <View className='index'>
-      <Text>Hello world!</Text>
-    </View>
-  )
-}
+    <ScrollView scrollY>
+      <View className={styles.viewBody}>
+        {/* 头部 */}
+        <Header onSearch={setSearchValue} />
+        {/* 轮播图 */}
+        <ImageSwiper />
+        {/* 分类 */}
+        <Category />
+        {/* 推荐 */}
+        <Recommend />
+        {/*有声小说*/}
+        <AudioBook />
+        {/* 底部 */}
+        <TabBar />
+      </View>
+    </ScrollView>
+
+  );
+};
+
+export default Index;

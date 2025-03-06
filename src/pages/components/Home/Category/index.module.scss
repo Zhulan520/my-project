@@ -1,0 +1,17 @@
+.categoryFlex{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  color: '#379DD5';
+  .categoryItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    .text{
+      font-size: 28px;
+      margin-top: 5px;
+      color:#4F4F4F
+    }
+  }
+}

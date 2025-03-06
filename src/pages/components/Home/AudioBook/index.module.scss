@@ -1,0 +1,49 @@
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10 0;
+  .text{
+    font-size: 32px;
+    font-weight: 600;
+    color: #4F4F4F;
+  }
+  .view{
+    font-size: 28px;
+    color: #379DD5;
+  }
+}
+.audioBookItem{
+  display: flex;
+  .imageView{
+    display: flex;
+    flex: 1;
+  }
+
+  .audioBookInfo{
+    margin-left: 10px;
+    position: relative;
+    .title{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .subtitle{
+      margin-top: 10px;
+      font-size: 25px;
+      color:#82837F ;
+    }
+    .info{
+      position: absolute;
+      font-size: 20px;
+      color:#82837F ;
+      left: 10px;
+      bottom: 10px;
+      .plays{
+        margin-right: 10px;
+      }
+    }
+  }
+ 
+ 
+}

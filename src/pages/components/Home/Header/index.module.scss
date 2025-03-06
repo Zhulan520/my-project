@@ -1,0 +1,11 @@
+.headerView {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  .input{
+    width: 100%;
+  }
+}

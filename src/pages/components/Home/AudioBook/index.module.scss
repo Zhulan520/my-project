@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10 0;
+  margin-bottom: 10px;
   .text{
     font-size: 32px;
     font-weight: 600;
@@ -15,6 +15,7 @@
 }
 .audioBookItem{
   display: flex;
+  margin-bottom: 20px;
   .imageView{
     display: flex;
     flex: 1;

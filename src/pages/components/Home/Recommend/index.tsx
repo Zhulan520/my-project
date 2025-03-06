@@ -5,7 +5,7 @@ import { DetailList } from "./constants";
 const Recommend = () => {
 
   return (
-    <View >
+    <View style={{ marginBottom: 20 }}>
       <View className={styles.title}  >
         <Text className={styles.text}>猜你喜欢</Text> <Text className={styles.view}>{"查看全部 >"}</Text>
       </View>

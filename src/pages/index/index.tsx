@@ -3,11 +3,7 @@ import {
   View,
   ScrollView,
 } from '@tarojs/components';
-import Taro from '@tarojs/taro';
 import styles from './index.module.scss';
-// import Banner from '../../components/Banner';
-// import Recommend from '../../components/Recommend';
-// import Footer from '../../components/Footer';
 import Header from '../components/Home/Header';
 import ImageSwiper from '../components/Home/Swiper/ index';
 import Category from '../components/Home/Category';

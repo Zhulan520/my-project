@@ -1,7 +1,8 @@
 export default defineAppConfig({
   pages: [
     'pages/index/index',
-    'pages/user/index'
+    'pages/user/index',
+    'pages/category/index'
   ],
   permission: {
     "scope.userInfo": {
@@ -11,7 +12,7 @@ export default defineAppConfig({
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: 'WeChat',
+    navigationBarTitleText: '喜马拉雅',
     navigationBarTextStyle: 'black'
   },
 })

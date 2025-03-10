@@ -16,9 +16,16 @@ const TabBar = () => {
           return (
             <View className={styles.categoryItem} key={index} onClick={() => {
               setActiveIndex(index)
-              Taro.navigateTo({
-                url: '/pages/user/index'
-              });
+              if (index === 3) {
+                Taro.navigateTo({
+                  url: '/pages/user/index'
+                })
+              };
+              if (index === 1) {
+                Taro.navigateTo({
+                  url: '/pages/category/index'
+                })
+              };
             }}
             >
               <Icon size={30} type='info_circle' color={activeIndex === index ? '#F94F27' : '#C5C5C5'} />

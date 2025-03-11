@@ -16,14 +16,19 @@ const TabBar = () => {
           return (
             <View className={styles.categoryItem} key={index} onClick={() => {
               setActiveIndex(index)
-              if (index === 3) {
-                Taro.navigateTo({
-                  url: '/pages/user/index'
-                })
-              };
               if (index === 1) {
                 Taro.navigateTo({
                   url: '/pages/category/index'
+                })
+              };
+              if (index === 2) {
+                Taro.navigateTo({
+                  url: '/pages/collect/index'
+                })
+              };
+              if (index === 3) {
+                Taro.navigateTo({
+                  url: '/pages/user/index'
                 })
               };
             }}

@@ -2,7 +2,8 @@ export default defineAppConfig({
   pages: [
     'pages/index/index',
     'pages/user/index',
-    'pages/category/index'
+    'pages/category/index',
+    'pages/collect/index'
   ],
   permission: {
     "scope.userInfo": {
